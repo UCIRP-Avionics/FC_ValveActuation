@@ -10,14 +10,16 @@ int main(void)
 
 
   __HAL_RCC_GPIOD_CLK_ENABLE();
+  __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOC_CLK_DISABLE();
 
   valves_init();
 
   while (1)  {
       valves_set(VALVE_CH4_MAIN, VALVE_STATE_CLOSED);
-      HAL_Delay(500);
+      HAL_Delay(5);
       valves_set(VALVE_CH4_MAIN, VALVE_STATE_OPEN);
-      HAL_Delay(500);
+      HAL_Delay(5);
   }
 }
 
