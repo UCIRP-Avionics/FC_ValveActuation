@@ -14,4 +14,10 @@
 #define VALVE_LOX_BLEED  GPIO_PIN_14
 #define VALVE_CH4_BLEED  GPIO_PIN_15
 
+#define VALVE_STATE_CLOSED 0
+#define VALVE_STATE_OPEN   1
+
+void valves_init();
+void valves_set(uint16_t valve, int value);
+
 #endif
