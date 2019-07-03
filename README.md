@@ -31,3 +31,6 @@ Call `valves_init()` to initialize everything to a default state. Then, call `va
           HAL_Delay(5);
       }
     }
+
+# Tests
+Run `ceedling test:all` in the root directory
