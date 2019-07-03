@@ -7,14 +7,9 @@ void valves_init() {
         VALVE_GPIO_PORT,
         VALVE_N2_FILL | VALVE_HE_FILL |
         VALVE_LOX_MAIN | VALVE_CH4_MAIN |
-        VALVE_LOX_FILL | VALVE_CH4_FILL,
-        GPIO_PIN_RESET
-    );
-
-    HAL_GPIO_WritePin(
-        VALVE_GPIO_PORT,
+        VALVE_LOX_FILL | VALVE_CH4_FILL |
         VALVE_LOX_BLEED | VALVE_CH4_BLEED,
-        GPIO_PIN_SET
+        GPIO_PIN_RESET
     );
 
     GPIO_InitStruct.Pin = (VALVE_N2_FILL | VALVE_HE_FILL 
