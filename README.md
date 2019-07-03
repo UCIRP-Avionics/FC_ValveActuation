@@ -10,7 +10,7 @@
     PD15 ->  CH4_BLEED
     
 # Usage
-Call `valves_init()` to initialize everything to a default state. Then, call `valves_set(uinit16_t valve, int state) to set a valve open or closed. The library automatically takes care of inverting the bleed valve output.
+Call `valves_init()` to initialize everything to a default state. Then, call `valves_set(uinit16_t valve, int state)` to set a valve open or closed. The library automatically takes care of inverting the bleed valve output.
 
 # Example
     int main(void)  {
